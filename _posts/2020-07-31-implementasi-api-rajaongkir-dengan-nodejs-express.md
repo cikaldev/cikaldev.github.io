@@ -69,7 +69,7 @@ Penjelasan singkat **api.js** :
 * Line 7, silahkan masukkan APIKEY kalian (yang sudah dicatat sebelumnya di awal)
 * Line 11-15, endpoint "**/api/provinsi**" akan me-return JSON data provinsi dari RajaOngkir. _(silahkan baca dokumentasi di link yang saya buat di awal)_
 * Line 18-23, endpoint "**/api/kota/:provId**" akan me-return JSON data kota berdasarkan ID Provinsi yang di request pada parameter "**provId**" dari RajaOngkir. _(silahkan baca dokumentasi di link yang saya buat di awal)_
-* Line 26-36, endpoint "**/api/ongkos/:asal/:tujuan/:berat/:kurir**" sama seperti sebelum nya. Akan me-return JSON data, namun yang jadi sorotan jumlah parameter yang lumayan serius kali ini 😃<br>
+* Line 26-36, sama seperti sebelum nya. Akan me-return JSON data, namun yang jadi sorotan jumlah parameter yang lumayan serius kali ini 😃<br>
 **:asal** = **int** ID Kota asal<br>
 **:tujuan** = **int** ID Kota tujuan<br>
 **:berat** = **int** Satuan gram (1kg = 1000g)<br>
