@@ -7,7 +7,7 @@ layout: default
     <small><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><strong>{{ site.author }}</strong></span></span></small> on {% for cat in page.categories %}<span style="padding:2px 4px; border-radius: 4px; font-size: 12px; background-color: #ffc107; margin-right: 5px;">{{ cat }}</span>{% endfor %}
   </header>
   <div itemprop="articleBody">
-    {% if page.asciinema %}<asciinema-player src="/cast/{{ page.asciinema }}.cast" ></asciinema-player>{% endif %}
+    {% if page.asciinema %}<asciinema-player src="/assets/cast/{{ page.asciinema }}.cast" ></asciinema-player>{% endif %}
     {{ content }}
   </div>
 </article>
