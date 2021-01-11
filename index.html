@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="author" content="ian cikal">
-  <meta name="description" content="">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#333">
-  <title>Cikal Studio</title>
-</head>
-<body>
-  <h1>must be works..</h1>
-</body>
-</html>
+---
+layout: default
+---
+<section>
+  <h3>Posts</h3>
+  <ul style="padding-left: initial;">
+    {% for post in paginator.posts %}
+      <li style="list-style-type: none;">
+        <h2 style="margin-bottom: 0;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        <p style="margin-top: 10px;">{{ post.excerpt | strip_html | strip_newlines | truncate: 170 }} <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+  <section align="center" style="margin-top: 70px">{% include pagination.html %}</section>
+</section>

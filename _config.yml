@@ -1,0 +1,33 @@
+# Site settings
+# 
+title: "cikaldev"
+email: cikaldev@gmail.com
+description: Just another site
+author: ian
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cikaldev.github.io" # the base hostname & protocol for your site
+google_site_verification:
+
+# social media
+# 
+twitter_username: cikaldev
+github_username:  cikaldev
+
+# dependencies
+# 
+gems: [jekyll-paginate]
+
+# pagination
+# 
+paginate: 1
+paginate_path: "/page:num/"
+
+# Build settings
+# 
+markdown: kramdown
+
+# syntax highlighter
+# 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
