@@ -6,12 +6,21 @@ description: Just another site
 author: ian
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cikaldev.github.io" # the base hostname & protocol for your site
-google_site_verification: o-eo66iHjEaP0geKz92WvNnFnewqDtwa2-7S8xIAGOc
+# google_site_verification: o-eo66iHjEaP0geKz92WvNnFnewqDtwa2-7S8xIAGOc
+# google_analytics: G-KKH7FV990Z
+
+# google product
+# 
+google:
+  site_verification: o-eo66iHjEaP0geKz92WvNnFnewqDtwa2-7S8xIAGOc
+  analytics: G-KKH7FV990Z
 
 # social media
 # 
-twitter_username: cikaldev
-github_username:  cikaldev
+social:
+  twitter: cikaldev
+  github: cikaldev
+  disqus: cikaldev
 
 # dependencies
 # 

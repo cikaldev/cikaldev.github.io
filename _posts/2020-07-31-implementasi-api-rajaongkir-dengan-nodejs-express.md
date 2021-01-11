@@ -4,6 +4,7 @@ title:  "Implementasi API RajaOngkir dengan NodeJS + Express"
 date:   2020-07-31 23:15:09 +0700
 categories: nodejs javascript api
 keywords: nodejs,javascript,api,rajaongkir,api,tutorial
+comments: true
 ---
 Pandemi bukan jadi satu halangan atau alasan bagi kita para developer untuk tetap berkarya, pasalnya sebelum masa pandemi pun, sebagian besar dari kita bekerja secara remote dari rumah / kantor / bahkan ada yang sambil duduk santuy di coffee shop.
 

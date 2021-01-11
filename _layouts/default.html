@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+  <meta name="google-site-verification" content="{{ site.google.site_verification }}" />
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.title }}">
   <meta name="contact" content="{{ site.email }}">
@@ -37,5 +37,8 @@
     {{ content }}
   {% include footer.html %}
   {% if page.asciinema %}<script src="{{ '/assets/js/asciinema-player.js' | prepend: site.baseurl }}"></script>{% endif %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {% include analytics.html %}
+  <script id="dsq-count-scr" src="//{{ site.social.disqus }}.disqus.com/count.js" async></script>
 </body>
 </html>

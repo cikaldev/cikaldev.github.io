@@ -9,5 +9,6 @@ layout: default
   <div itemprop="articleBody">
     {% if page.asciinema %}<asciinema-player src="/assets/cast/{{ page.asciinema }}.cast" ></asciinema-player>{% endif %}
     {{ content }}
+    {% if page.comments %}<br>{% include disqus.html %}{% endif %}
   </div>
 </article>

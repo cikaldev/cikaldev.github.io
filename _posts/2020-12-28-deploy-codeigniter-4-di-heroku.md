@@ -4,6 +4,7 @@ title:  "Deploy CodeIgniter 4 di Heroku"
 date:   2020-12-28 16:24:37 +0700
 categories: php codeigniter heroku
 keywords: php,codeigniter,ci,ci-4,heroku,framework,deploy,tutorial
+comments: true
 ---
 
 ## Buat project baru
