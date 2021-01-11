@@ -19,7 +19,7 @@ gems: [jekyll-paginate]
 
 # pagination
 # 
-paginate: 1
+paginate: 5
 paginate_path: "/page:num/"
 
 # Build settings
