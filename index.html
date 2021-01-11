@@ -7,7 +7,7 @@ layout: default
     {% for post in paginator.posts %}
       <li style="list-style-type: none;">
         <h2 style="margin-bottom: 0;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small> on {% for cat in page.categories %}<span style="padding:2px 4px; border-radius: 4px; font-size: 12px; background-color: #ffc107; margin-right: 5px;">{{ cat }}</span>{% endfor %}
         <p style="margin-top: 10px;">{{ post.excerpt | strip_html | strip_newlines | truncate: 170 }} <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
       </li>
     {% endfor %}
