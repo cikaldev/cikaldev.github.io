@@ -9,9 +9,9 @@ Pandemi bukan jadi satu halangan atau alasan bagi kita para developer untuk teta
 
 Hari ini saya akan sharing dengan kalian, cara Implementasi API RajaOngkir dengan NodeJS dan Express. Saya asumsikan di PC / Laptop kalian sudah terinstall NodeJS, dan sebelumnya kalian sudah pernah berkenalan / latihan dengan NodeJS. Jadi kita tidak perlu membahas hal-hal mendasar yang sudah ada di jawaban dan tutorial nya di belantara Internet, saya akan langsung ke pokok pembahasan.
 
-Demo sederhana bisa kalian kunjungi pada link berikut, <https://kotaksabun.herokuapp.com/rajaongkir.html>{: target="_blank" }.
+Demo sederhana bisa kalian kunjungi pada link berikut, [demo](https://kotaksabun.herokuapp.com/rajaongkir.html){: target="_blank" }.
 
-Link dokumentasi RajaOngkir pada link berikut, <https://rajaongkir.com/dokumentasi>{: target="_blank" }.
+Link dokumentasi RajaOngkir pada link berikut, [dockumentasi](https://rajaongkir.com/dokumentasi){: target="_blank" }.
 
 ## Real world, use case
 
