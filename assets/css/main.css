@@ -59,3 +59,7 @@ a:hover {
   background-color: #ffc107;
   margin-right: 5px;
 }
+
+img {
+  width: 100%;
+}
