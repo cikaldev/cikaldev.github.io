@@ -87,4 +87,4 @@ Link Demo : <https://olala-beibeh.herokuapp.com>{: target="_blank"}
 
 Semoga bermanfaat.
 
-![gif](/assets/media/deploy-heroku-ci4.mp4)
+![gif](/assets/media/deploy-heroku-ci4.gif)
