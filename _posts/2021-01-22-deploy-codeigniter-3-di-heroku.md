@@ -14,7 +14,7 @@ Silahkan download file release nya <a href="https://api.github.com/repos/bcit-ci
 
 ### Update composer dependencies
 
-Setelah selesai, buka file **composer.json** dan hapus semua isi nya, kemudian ketik kode berikut:
+Silahkan buka file "**composer.json**" dan hapus semua isi nya, kemudian ketik kode berikut:
 
 ```json
 {
@@ -26,9 +26,9 @@ Setelah selesai, buka file **composer.json** dan hapus semua isi nya, kemudian k
 
 **NOTE :** _Kenapa harus di edit? Karena Heroku akan menggunakan versi **Stable/Latest** di setiap install dependencies. Seperti kita tahu, saat ini PHP sudah mencapai **Versi 8** , sayangnya **CodeIgniter 4** belum support PHP 8, jadi kita harus manual memilih versi PHP yang akan di jalankan pada platform Heroku._
 
-Setelah selesai update dependencies composer pada langkah diatas, silahkan ketik perintah `composer update`, jika setelah mengetik perintah tersebut terdapat error conflict versi PHP pada composer dengan versi PHP yang terinstall di komputer kalian.
+Setelah selesai update dependencies composer pada langkah diatas, silahkan ketik perintah **composer update**, jika setelah mengetik perintah tersebut terdapat error conflict versi PHP pada composer dengan versi PHP yang terinstall di komputer kalian.
 
-Silahkan edit file `composer.lock`, cari dependencies versi php kemudian edit seperti langkah sebelumnya.
+Silahkan edit file "**composer.lock**", cari dependencies versi php kemudian edit seperti langkah sebelumnya.
 
 ```json
   ...
@@ -38,7 +38,7 @@ Silahkan edit file `composer.lock`, cari dependencies versi php kemudian edit se
 
 ### Edit Config & Autoload
 
-Silahkan buka file `application/config/config.php` kemudian lakukan edit pada **base_url** dan **index_page** kosongkan isinya.
+Silahkan buka file "**application/config/config.php**" kemudian lakukan edit pada "**base_url**" dan "**index_page**" kosongkan isinya.
 
 line 26 edit menjadi:
 
@@ -52,7 +52,7 @@ line 38 edit menjadi:
 $config['index_page'] = '';
 ```
 
-Silahkan simpan, selanjutnya silahkan buka file `application/config/autoload.php`. Lakukan edit pada line 92, disini kita akan me-load helper url.
+Silahkan simpan, selanjutnya silahkan buka file "**application/config/autoload.php**". Lakukan edit pada line 92, disini kita akan me-load helper url.
 
 line 92 edit menjadi:
 
@@ -67,7 +67,7 @@ Jika sudah selesai, silahkan simpan. Sampai tahap ini, urusan config saya rasa s
 
 Selanjutnya silahkan buat file htaccess di root folder project sejajar dengan folder **application**.
 
-File **.htaccess**
+File "**.htaccess**"
 
 ```
 RewriteEngine On
@@ -78,7 +78,7 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 
 ## Deploy
 
-Sebelum melakukan deploy, silahkan buat 1 file baru di root folder project, sejajar dengan folder application. Nama file nya **Procfile** tanpa ekstensi yaa.
+Sebelum melakukan deploy, silahkan buat 1 file baru di root folder project, sejajar dengan folder application. Nama file nya "**Procfile**" tanpa ekstensi yaa.
 
 Kemudian isi dengan perintah berikut, lalu simpan.
 
@@ -122,6 +122,6 @@ git push heroku master
 
 Link Demo : <a href="https://latihan-ci3.herokuapp.com" target="_blank">https://latihan-ci3.herokuapp.com</a>
 
-Sampai disini kita sudah berhasil menyelesaikan tutorial _Deploy CodeIgniter 3 di Heroku_, silahkan anda kembangkan project latihan ini sesuai kebutuhan anda.
+Sampai disini kita sudah berhasil menyelesaikan tutorial "_Deploy CodeIgniter 3 di Heroku_", silahkan anda kembangkan project latihan ini sesuai kebutuhan anda.
 
 Semoga bermanfaat.
