@@ -14,7 +14,7 @@ update: 20-01-2021
 Ketik perintah berikut :
 
 ```bash
-composer create-project codeigniter4/appstarter olala-beibeh
+composer create-project codeigniter4/appstarter latihan-ci4 --no-dev
 ```
 
 Setelah selesai, buka file **composer.json** kemudian edit versi PHP menjadi v7.x
@@ -32,9 +32,9 @@ Setelah selesai, buka file **composer.json** kemudian edit versi PHP menjadi v7.
 
 **NOTE :** _Kenapa harus di edit? Karena Heroku akan menggunakan versi **Stable/Latest** di setiap install dependencies. Seperti kita tahu, saat ini PHP sudah mencapai **Versi 8** , sayangnya **CodeIgniter 4** belum support PHP 8, jadi kita harus manual memilih versi PHP yang akan di jalankan pada platform Heroku._
 
-Ketik perintah `composer update`, jika setelah mengetik perintah tersebut terdapat error conflict versi PHP pada composer dengan versi PHP yang terinstall di komputer kalian.
+Ketik perintah `composer update`, jika setelah mengetik perintah tersebut terdapat **error conflict** versi PHP pada composer dengan versi PHP yang terinstall di komputer kalian.
 
-Silahkan edit file `composer.lock`, cari dependencies versi php kemudian edit seperti langkah sebelumnya.
+Silahkan edit file `composer.lock` secara manual, cari dependencies versi php kemudian edit seperti langkah sebelumnya.
 
 ```json
   ...
@@ -55,10 +55,10 @@ web: vendor/bin/heroku-php-apache2 public/
 Silahkan lanjut kan perintah berikut :
 
 ```bash
-cd olala-beibeh
+cd latihan-ci4
 git init
 git add .
-git commit -m "olala"
+git commit -m "latihan"
 ```
 
 **NOTE :** _Pada perintah "**git add .**" terdapat simbol titik di akhir, jangan sampai ketinggalan!_
@@ -70,7 +70,7 @@ Sampai disini project CodeIgniter 4 sudah jadi, sekarang kita lanjut buat Aplika
 Lanjut ketik perintah berikut :
 
 ```bash
-heroku apps:create olala-beibeh
+heroku apps:create latihan-ci4
 ```
 
 Setelah apps heroku berhasil dibuat, langkah terakhir untuk men-deploy aplikasi kita ke server heroku.
@@ -81,10 +81,8 @@ Silahkan ketik perintah berikut :
 git push heroku master
 ```
 
-Link Demo : <https://olala-beibeh.herokuapp.com>{: target="_blank"}
+Link Demo : <https://latihan-ci4.herokuapp.com>{: target="_blank"}
 
 ### Ga nyampe 5 menit web sudah Online..
 
 Semoga bermanfaat.
-
-![gif](/assets/media/deploy-heroku-ci4.gif)
