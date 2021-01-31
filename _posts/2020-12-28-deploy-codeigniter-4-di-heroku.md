@@ -7,7 +7,7 @@ keywords: php,codeigniter,ci,ci-4,heroku,framework,deploy,tutorial
 comments: true
 ---
 
-update: 20-01-2021
+update: 31-01-2021
 
 ## Buat project baru
 
