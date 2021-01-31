@@ -24,7 +24,7 @@ Silahkan buka file "**composer.json**" dan hapus semua isi nya, kemudian ketik k
 }
 ```
 
-**NOTE :** _Kenapa harus di edit? Karena Heroku akan menggunakan versi **Stable/Latest** di setiap install dependencies. Seperti kita tahu, saat ini PHP sudah mencapai **Versi 8** , sayangnya **CodeIgniter 4** belum support PHP 8, jadi kita harus manual memilih versi PHP yang akan di jalankan pada platform Heroku._
+**NOTE :** _Kenapa harus di edit? Karena Heroku akan menggunakan versi **Stable/Latest** di setiap install dependencies. Seperti kita tahu, saat ini PHP sudah mencapai **Versi 8** , sayangnya **CodeIgniter** belum support PHP 8, jadi kita harus manual memilih versi PHP yang akan di jalankan pada platform Heroku._
 
 Setelah selesai update dependencies composer pada langkah diatas, silahkan ketik perintah **composer update**, jika setelah mengetik perintah tersebut terdapat error conflict versi PHP pada composer dengan versi PHP yang terinstall di komputer kalian.
 
